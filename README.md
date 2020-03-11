@@ -47,3 +47,10 @@ Denotes that the annotated element should not be renamed when the code is minifi
 </li>
 </ul>
 
+2. <strong>baselineAligned</strong>
+
+"Defines whether widgets contained in this layout are baseline-aligned or not."
+
+By setting <code>android:baselineAligned="false"</code> , app prevents the layout from aligning its children's baselines, that means app doesn't worry about where the baseline of other elements in the layout, which increases the UI performance.
+
+<strong>Note:</strong> By default, <code>baselineAligned</code> is set to <code>true</code>.
