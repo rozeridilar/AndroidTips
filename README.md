@@ -1,6 +1,6 @@
 # Android tips & tricks ⚡️
 
-1. <strong>Proguard</strong>
+<strong>Proguard</strong>
 
 <strong>ProGuard -- shrinking, optimization, obfuscation, and preverification of Java bytecode.</strong>
 
@@ -47,7 +47,7 @@ Denotes that the annotated element should not be renamed when the code is minifi
 </li>
 </ul>
 
-2. <strong>baselineAligned</strong>
+<strong>baselineAligned</strong>
 
 "Defines whether widgets contained in this layout are baseline-aligned or not."
 
