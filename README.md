@@ -56,7 +56,9 @@ By setting <code>android:baselineAligned="false"</code> , app prevents the layo
 <strong>Note:</strong> By default, <code>baselineAligned</code> is set to <code>true</code>.
 
 
-## [#3 Publishing Single Library on Jitpack](https://rozeridilar.com/2020/03/11/publishing-libraries-on-jitpack/)
+## [#3 Publishing Libraries in Jitpack](https://rozeridilar.com/2020/03/11/publishing-libraries-on-jitpack/)
+
+Publishing Single Library on Jitpack
 
 JitPack is a novel package repository for JVM and Android projects. It builds Git projects on demand and provides you with ready-to-use artifacts (jar, aar).
 1. Create a new android project.
