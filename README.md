@@ -76,7 +76,7 @@ Note: when using multiple repositories in build.gradle it is recommended to add 
 Note: You have to give permission from your account to jitpack.
 single library example
 
-### Publishing Multiple Libraries On Jitpack
+### Publishing Multiple Libraries on Jitpack
 
 1. Create a new android project.
 1. Add your libraries one by one by File -> New -> Import a module.
