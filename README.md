@@ -54,3 +54,43 @@ Denotes that the annotated element should not be renamed when the code is minifi
 By setting <code>android:baselineAligned="false"</code> , app prevents the layout from aligning its children's baselines, that means app doesn't worry about where the baseline of other elements in the layout, which increases the UI performance.
 
 <strong>Note:</strong> By default, <code>baselineAligned</code> is set to <code>true</code>.
+
+
+## [#3 Publishing Single Library on Jitpack](https://rozeridilar.com/2020/03/11/publishing-libraries-on-jitpack/)
+
+JitPack is a novel package repository for JVM and Android projects. It builds Git projects on demand and provides you with ready-to-use artifacts (jar, aar).
+1. Create a new android project.
+2.Add your library by File -> New -> Import a module.
+3.Add the JitPack maven repository to the list of repositories:
+repositories {
+jcenter() maven { url "https://jitpack.io" }
+}
+
+
+Note: when using multiple repositories in build.gradle it is recommended to add JitPack at the end. Gradle will go through all repositories in order until it finds a dependency.
+4. Then publish your new project to your GitHub account. Then, push your first version tag.
+Note: You have to give permission from your account to jitpack.
+single library example
+
+Publishing Multiple Libraries On Jitpack
+
+1. Create a new android project.
+2. Add your libraries one by one by File -> New -> Import a module.
+3. Add the JitPack maven repository to the list of repositories:
+repositories {
+jcenter() maven { url "https://jitpack.io" }
+}
+
+Note: when using multiple repositories in build.gradle it is recommended to add JitPack at the end. Gradle will go through all repositories in order until it finds a dependency.
+4. Then publish your new project to your GitHub account. Then, push your first version tag.
+Note: You have to give permission from your account to jitpack.
+example for multiple libraries
+
+Important Notes: 🚀
+Lets assume you have module1, module2, module3 in your android project.
+To share only one module, you can add:
+implementation ‘com.github.yourproject:module1:module1’sTAG'
+Or to share all your project directly:
+implementation’com.github.yourproject:yourproject'sTAG'
+
+If you are using apply plugins for such as androidanalyser, the developer who wants to use your project must embed it in her/his app. So be sure, that you embed as few plugins as possible.
