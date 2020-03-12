@@ -95,9 +95,14 @@ example for multiple libraries
 
 **Important Notes** 🚀
 Lets assume you have module1, module2, module3 in your android project.
+
 To share only one module, you can add:
+```java
 implementation ‘com.github.yourproject:module1:module1’sTAG'
+```
 Or to share all your project directly:
+```java
 implementation’com.github.yourproject:yourproject'sTAG'
+```
 
 If you are using apply plugins for such as androidanalyser, the developer who wants to use your project _must_ embed it in her/his app. So be sure, that you _embed as few plugins as possible_.
