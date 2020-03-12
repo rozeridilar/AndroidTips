@@ -100,4 +100,4 @@ implementation ‘com.github.yourproject:module1:module1’sTAG'
 Or to share all your project directly:
 implementation’com.github.yourproject:yourproject'sTAG'
 
-If you are using apply plugins for such as androidanalyser, the developer who wants to use your project must embed it in her/his app. So be sure, that you embed as few plugins as possible.
+If you are using apply plugins for such as androidanalyser, the developer who wants to use your project _must_ embed it in her/his app. So be sure, that you _embed as few plugins as possible_.
