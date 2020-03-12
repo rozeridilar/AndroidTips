@@ -32,6 +32,8 @@ Denotes that the annotated element should not be renamed when the code is minifi
 <strong>Tips & Tricks in Proguard</strong>
 <ul>
  	<li>Proguard does not obfuscate the class names and public methods called in AndroidManifest.xml by default. So you don't have to add 'keep'in those classes.</li>
+  <li> When we use data classes (models) for serialization or retrieving data from JSON, we should keep our model classes </li>
+<pre class="default prettyprint prettyprinted"><span style="color:#222222;font-family:monospace;"><span style="background-color:#e9ebec;"> -keep class com.xyz.mypackage.models.** { *; } </span></span></pre>
  	<li>Android Analyser can help you a lot while deciding which rules to add in proguard. Yet, to prevent unexpected crashes, be sure to test your release app in depth at the end.</li>
  	<li>To create released apk, change your directory in terminal then add the following snippet and run.
 <pre class="default prettyprint prettyprinted"><span style="color:#222222;font-family:monospace;"><span style="background-color:#e9ebec;">./gradlew assembleRelease</span></span></pre>
