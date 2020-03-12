@@ -64,10 +64,11 @@ JitPack is a novel package repository for JVM and Android projects. It builds Gi
 1. Create a new android project.
 2.Add your library by File -> New -> Import a module.
 3.Add the JitPack maven repository to the list of repositories:
+```java
 repositories {
 jcenter() maven { url "https://jitpack.io" }
 }
-
+```
 
 Note: when using multiple repositories in build.gradle it is recommended to add JitPack at the end. Gradle will go through all repositories in order until it finds a dependency.
 4. Then publish your new project to your GitHub account. Then, push your first version tag.
@@ -79,9 +80,11 @@ Publishing Multiple Libraries On Jitpack
 1. Create a new android project.
 2. Add your libraries one by one by File -> New -> Import a module.
 3. Add the JitPack maven repository to the list of repositories:
+```java
 repositories {
 jcenter() maven { url "https://jitpack.io" }
 }
+```
 
 Note: when using multiple repositories in build.gradle it is recommended to add JitPack at the end. Gradle will go through all repositories in order until it finds a dependency.
 4. Then publish your new project to your GitHub account. Then, push your first version tag.
